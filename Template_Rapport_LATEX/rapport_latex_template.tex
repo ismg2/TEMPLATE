@@ -257,6 +257,17 @@ INTRODUCTION
 
 \section{3 - Section 2}
 
+\section{Je veux mettre du code : Exemple}
+
+\begin{lstlisting}[label=un-label,caption=Titre du code : ex VHDL ]
+ sig_A <= "01010101";
+ sig_B <= "00110011";		 
+ sig_CMD <= "101";			-- case 7: question 6 (test avec erreur pour assert)		   
+ wait for delay;
+ assert sig_S = "01110101" report "Imagination" severity note; -- on test la fonction OR (pr�sence d'une erreur)
+ assert false report "ERREUR = TRUE" severity note;
+\end{lstlisting}
+
 
 \chapter*{Conclusion}
 \addcontentsline{toc}{chapter}{Conclusion}
