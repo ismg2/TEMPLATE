@@ -1,0 +1,276 @@
+\documentclass[11pt,a4paper]{report}
+\usepackage[french]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{layout}
+\usepackage{titlesec}
+\usepackage{lmodern}
+\usepackage{enumitem}
+\usepackage{amsmath}
+\usepackage{empheq}
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+\usepackage{array}
+\usepackage{gensymb}
+\usepackage{mathenv}
+\usepackage{color}
+%\usepackage[intlimits]{amsmath}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{listings}
+\usepackage{graphicx}
+\usepackage{fancybox}
+\usepackage{fourier-orns}
+
+
+\definecolor{codecustom}{rgb}{0,0.5,0}
+\definecolor{codegray}{rgb}{0.7,0.7,0.7}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.975,0.97,0.975}
+\definecolor{custom}{RGB}{216,0,127}
+\definecolor{lightgray}{gray}{0.75}
+\definecolor{myblue}{rgb}{.8, .8, 1}
+\definecolor{redcustom}{RGB}{255,0,0}
+
+\titleformat{\chapter}[hang]{\bf\huge}{\thechapter}{2pc}{}
+
+
+\usepackage[final]{pdfpages} %inclure un pdf
+
+
+  \newcommand*\mybluebox[1]{%
+    \colorbox{myblue}{\hspace{0.5em}#1\hspace{1em}}}
+
+\lstdefinestyle{mystyle}{
+	language=VHDL,
+    backgroundcolor=\color{backcolour},
+    commentstyle=\color{codecustom},
+    keywordstyle=\color{custom},
+    morekeywords={Fe, Te, sin, carre, Liste, ELEMENT},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\footnotesize,
+    breakatwhitespace=false,
+    breaklines=true,
+    captionpos=t,
+    keepspaces=true,
+    numbers=left,
+    numbersep=5pt,
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    tabsize=2,
+    extendedchars=true,
+    literate={ÃÂÃÂ©}{{\'e}}1 {ÃÂÃÂ¡}{{\`e}}1 {ÃÂ}{{\`a }}1 {ÃÂÃÂ§}{{\c{c}}}1 {ÃÂÃÂ}{{\oe}}1 {ÃÂÃÅ}{{\`u}}1
+{ÃÂÃÂ}{{\'E}}1 {EÃÂÃÂ}{{\`E}}1 {ÃÂÃÂ}{{\`A}}1 {ÃÂÃÂ}{{\c{C}}}1 {ÃÂÃÂ}{{\OE}}1 {ÃÂÃÂ}{{\^E}}1
+{ÃÂÃÂª}{{\^e}}1 {ÃÂÃÂ®}{{\^i}}1 {ÃÂÃÅ}{{\^o}}1 {ÃÂÃÂ»}{{\^u}}1 {ÃÂÃÂ¢}{{\^a}}1,
+}
+
+\lstset{style=mystyle}
+
+\frenchbsetup{StandardItemLabels=true, CompactItemize=false, ReduceListSpacing=true}
+\setcounter{tocdepth}{4}
+\usepackage{caption}
+\DeclareCaptionFont{white}{\color{white}}
+\DeclareCaptionFormat{listing}{\colorbox{codecustom}{\parbox{\textwidth}{#1#2#3}}}
+\captionsetup[lstlisting]{format=listing,labelfont=white,textfont=white}
+
+\renewcommand{\lstlistingname}{Extrait du code}
+
+%%%%%%%% Espace entre paragraphe et Indentation %%%%%%%%%%%%%%%%%%%%
+
+\setlength{\parskip}{0.09cm}
+\setlength{\parindent}{0.8cm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%% Dimensions de la page %%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage[top=2cm, bottom=2cm, left=2cm, right=2cm]{geometry}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%% Lien Hyperref Sommainre %%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\usepackage{hyperref} % Créer des liens et des signets
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%% Gestion des en-tête/pieds de page %%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+% Permet d'écrire le nom des chapitres et section en minuscules au lieu de majuscules definit par défaut
+\renewcommand{\chaptermark}[1]{\markboth{\bsc{\chaptername~\thechapter{} :} #1}{}}
+\renewcommand{\sectionmark}[1]{\markright{\thesection{} #1}}
+%
+
+\renewcommand{\headrulewidth}{0.4pt} % epaisseur du trait
+\fancyhead[C]{}
+\fancyhead[L]{\leftmark}
+\fancyhead[R]{Guedira}
+
+\renewcommand{\footrulewidth}{0.4pt}
+\fancyfoot[C]{\textbf{Page \thepage}}
+%\fancyfoot[L]{}
+%\fancyhead[C]{}
+\fancyhead[R]{\leftmark}
+\fancyhead[L]{}
+
+\renewcommand{\footrulewidth}{0.4pt}
+\fancyfoot[C]{\textbf{Page \thepage}}
+\fancyfoot[L]{\textsc{Ismail Guedira}}
+\fancyfoot[R]{\rightmark}
+
+%%%%%%%%%%%%% Option des annexes %%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage[toc,page]{appendix}
+\renewcommand{\appendixtocname}{Annexes}
+\renewcommand{\appendixpagename}{Annexes}
+\renewcommand{\appendixname}{Annexes}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\usepackage{pifont} %utiliser des signes pour les itemize plutot cool
+
+\usepackage{lscape}	%pouvoir passer en mode paysage
+
+
+
+%%%%%%%%%% Change le nom Table en Tableau %%%%%%%%%%
+
+\addto\captionsfrench{\def\tablename{Tableau}}
+
+
+
+\title{Intégration du logiciel Mathcad à la Conception Électronique}
+\author{Ismail Guedira}
+\usepackage{layout}
+
+
+
+\begin{document}
+
+
+%%%%% %%%%%%%%%                       Et si on refaisait la page de garde            %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\makeatletter
+  \begin{titlepage}
+  \centering
+      {\includegraphics[height=0.09\textheight]{logo_phelma.png} \hfill \Large \textbf{Grenoble INP - Phelma}}\\
+    \hfill \large \textsc{Physique Électronique Matériaux}\\
+    \hfill  3, Parvis Louis Néel \\
+	\hfill  38 000 Grenoble\\
+
+	\hspace{3em}
+
+    { \includegraphics[height=0.065\textheight]{logo_Rolls_Royce.jpg} \hfill \Large \textbf{Rolls-Royce}}\\
+    \hfill \large \textsc{Civil Nuclear SAS - Instrumentation \& Control }\\
+	\hfill 23, Chemin du Vieux Chêne   \\
+    \hfill 38 246 Meylan  \\
+
+
+   \vfill
+
+    \hrule
+    \vspace{1.5em}
+    	{	\LARGE \textsc{RAPPORT DE STAGE} \\
+    \vspace{1.5em}
+       \LARGE \textbf{\@title}} \\
+    \vspace{1.5em}
+    \hrule
+    \vspace{3 em}
+	\Large \textbf{Stagiaire :}		\hfill   \textsc{\@author} \\
+                                  	\hfill   \large $2^{ième}$ Année - \textbf{S}ystèmes \textbf{É}lectroniques \textbf{I}ntégrés \\
+   									\hfill   \textit{ismail.guedira@phelma.grenoble-inp.fr} \\
+	\vspace{2em}
+
+    \Large \textbf{Maitre de Stage :} 	\hfill	\Large \textsc{Hugo Petit} \\
+   										\hfill	\large \textbf{Analog Design Manager} \\
+   										\hfill	\textit{hugo.petit.cn@rolls-royce.com} \\
+
+
+    \vfill
+
+     {\Large \textsc{2014/2015}  \hfill \Large \textsc{\@date}} \\
+
+
+  \end{titlepage}
+\makeatother
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\pagenumbering{roman}
+\renewcommand{\contentsname}{Sommaire}
+\tableofcontents
+
+
+\newpage
+\chapter*{Remerciement}
+\addcontentsline{toc}{chapter}{Remerciement}
+
+REMERCIEMENT
+
+
+\chapter*{Introduction}
+\addcontentsline{toc}{chapter}{Introduction}
+
+INTRODUCTION
+
+
+% \newpage
+% 
+% \addcontentsline{toc}{chapter}{Abstract}
+% \vspace{3cm}
+% \textbf{Abstract} \\
+% \newline
+% \hspace*{17pt}
+
+\listoffigures
+
+\listoftables
+
+
+\newpage
+
+\pagenumbering{arabic}
+\chapter{Mise en contexte}
+
+\chapter{Chapitre 1}
+
+\section{1 - Section 1}
+
+\section{1 - Section 2}
+
+\chapter{Chapitre 2}
+
+\section{2 - Section 1}
+
+\section{2 - Section 2}
+
+\chapter{Chapitre 3}
+
+\section{3 - Section 1}
+
+\section{3 - Section 2}
+
+
+\chapter*{Conclusion}
+\addcontentsline{toc}{chapter}{Conclusion}
+.
+
+
+%%%%%%%%%%%%%%% Début de la gestion de l'annexe %%%%%%%%%%%%%%
+
+%\begin{appendices}
+%\include{Annexe/annexe}
+%\end{appendices}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\end{document}
