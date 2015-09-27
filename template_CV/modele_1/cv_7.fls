@@ -189,7 +189,7 @@ INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/lm/lmmi5.tfm
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/lm/lmsy10.tfm
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/lm/lmsy7.tfm
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/lm/lmsy5.tfm
-INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/lm/ec-lmsso10.tfm
+INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/lm/ec-lmcsc10.tfm
 INPUT /usr/local/texlive/2014/texmf-dist/tex/latex/microtype/mt-mvs.cfg
 INPUT /usr/local/texlive/2014/texmf-dist/tex/latex/microtype/mt-mvs.cfg
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/lm/ec-lmro10.tfm
@@ -200,8 +200,9 @@ INPUT cv_7.aux
 INPUT ./cv_7.out
 INPUT ./cv_7.out
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc
-INPUT /usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc
+INPUT /usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc
+INPUT /usr/local/texlive/2014/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/type1/public/lm/lmmi10.pfb
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/type1/public/lm/lmss10.pfb
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/type1/public/lm/lmss12.pfb

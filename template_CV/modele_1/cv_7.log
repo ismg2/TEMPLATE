@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.11.17)  27 SEP 2015 12:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.11.17)  27 SEP 2015 18:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -587,12 +587,10 @@ Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
  (/usr/local/texlive/2014/texmf-dist/tex/latex/microtype/mt-cmr.cfg
-File: mt-cmr.cfg 2013/05/19 v2.2 mic Modern Roman 
-(RS)
+File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
 )
 LaTeX Font Info:    Try loading font information for T1+lmss on input line 60.
-
-(/usr/local/texlive/2014/texmf-dist/tex/latex/lm/t1lmss.fd
+ (/usr/local/texlive/2014/texmf-dist/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 Package microtype Info: Loading generic settings for font family
@@ -638,8 +636,7 @@ Package microtype Info: Loading generic settings for font family
 Package hyperref Info: Link coloring OFF on input line 60.
 (/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
-
-(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+ (/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count109
@@ -647,23 +644,17 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 60.
 LaTeX Info: Redefining \pageref on input line 60.
 LaTeX Info: Redefining \nameref on input line 60.
-
-(./cv_7.out) (./cv_7.out)
+ (./cv_7.out) (./cv_7.out)
 \@outlinefile=\write3
 \openout3 = `cv_7.out'.
 
-\pagenumberwidth=\skip70
-LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10.95> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 60.
 \makecvtitlepicturebox=\box31
-
-<../pictures/photo.png, id=45, 79.0152pt x 88.1694pt>
+ <../pictures/photo.png, id=16, 79.0152pt x 88.1694pt>
 File: ../pictures/photo.png Graphic file (type png)
-
-<use ../pictures/photo.png>
+ <use ../pictures/photo.png>
 Package pdftex.def Info: ../pictures/photo.png used on input line 62.
 (pdftex.def)             Requested size: 70.0pt x 78.11667pt.
-\makecvtitlepicturewidth=\skip71
+\makecvtitlepicturewidth=\skip70
 
 Underfull \hbox (badness 10000) in paragraph at lines 62--62
 
@@ -674,20 +665,15 @@ LaTeX Font Info:    Try loading font information for OT1+lmr on input line 70.
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Try loading font information for OML+lmm on input line 70.
-
-(/usr/local/texlive/2014/texmf-dist/tex/latex/lm/omllmm.fd
+ (/usr/local/texlive/2014/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 70.
-
-
-(/usr/local/texlive/2014/texmf-dist/tex/latex/lm/omslmsy.fd
+ (/usr/local/texlive/2014/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Try loading font information for OMX+lmex on input line 70.
-
-
-(/usr/local/texlive/2014/texmf-dist/tex/latex/lm/omxlmex.fd
+ (/usr/local/texlive/2014/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -696,33 +682,6 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <8> on input line 70.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 70.
-
-! Argument of \\cventry has an extra }.
-<inserted text> 
-                \par 
-l.71 ...helma}{Institut National Polytechnique}{}}
-                                                  {Filière Système Électr...
-
-? q
-OK, entering \batchmode...
-Runaway argument?
-! Paragraph ended before \\cventry was complete.
-<to be read again> 
-                   \par 
-l.71 ...helma}{Institut National Polytechnique}{}}
-                                                  {Filière Système Électr...
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-! Too many }'s.
-<recently read> }
-                 
-l.71 ...helma}{Institut National Polytechnique}{}}
-                                                  {Filière Système Électr...
-You've closed more groups than you opened.
-Such booboos are generally harmless, so keep going.
-
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10> on input line 72.
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -730,86 +689,46 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 72.
 
-Overfull \hbox (278.95311pt too wide) in paragraph at lines 71--72
-\T1/lmss/m/n/10.95 (-20) l'�lectronique hy-per-fr�quence et les sys-t�mes op-to
-�lec-tron-iques [] 
- []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 189.
+LaTeX Font Warning: Font shape `T1/lmss/m/sc' in size <10.95> not available
+(Font)              Font shape `T1/lmr/m/sc' tried instead on input line 106.
 
+Package microtype Info: Character `029' is missing
+(microtype)             in font `T1/lmr/m/sc/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 198.
 (/usr/local/texlive/2014/texmf-dist/tex/latex/microtype/mt-mvs.cfg
 File: mt-mvs.cfg 2006/07/05 v1.1 microtype config. file: Marvosym Euro (RS)
 )
-LaTeX Font Info:    Try loading font information for OMS+lmr on input line 189.
-
-
-(/usr/local/texlive/2014/texmf-dist/tex/latex/lm/omslmr.fd
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 198.
+ (/usr/local/texlive/2014/texmf-dist/tex/latex/lm/omslmr.fd
 File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/sl' in size <10.95> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 189.
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 198.
  [1
 
-{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <../pict
-ures/photo.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 189.
+{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <../pictures/photo.png>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 198.
  (./cv_7.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 189.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 189.
-
-Package rerunfilecheck Warning: File `cv_7.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `cv_7.out':
-(rerunfilecheck)             Before: AB58EF4FAFE2F64DAD8E7FBB65291808;1036
-(rerunfilecheck)             After:  618F726F45CD88E1A1B9A0B0DD5C260F;385.
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 198.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 198.
+Package rerunfilecheck Info: File `cv_7.out' has not changed.
+(rerunfilecheck)             Checksum: 2E40DD0B03DB531A7938DD8DAE25BFB2;272.
  ) 
 Here is how much of TeX's memory you used:
- 12391 strings out of 493117
- 179572 string characters out of 6135432
- 389988 words of memory out of 5000000
- 15634 multiletter control sequences out of 15000+600000
- 60528 words of font info for 65 fonts, out of 8000000 for 9000
+ 12383 strings out of 493117
+ 179495 string characters out of 6135432
+ 390987 words of memory out of 5000000
+ 15628 multiletter control sequences out of 15000+600000
+ 60720 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  53i,12n,67p,770b,484s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{section*.10} has been referenced but does not exi
-st, replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.9} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.8} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.7} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.6} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.5} has been referenced but does not exist,
- replaced by a fixed one
-
-{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/loca
-l/texlive/2014/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/
-2014/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</usr/local/texlive/2014/texmf-dis
-t/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2014/texmf-dist/fonts/ty
-pe1/public/lm/lmss10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public
-/lm/lmss12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/lm/lmss17
-.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></u
-sr/local/texlive/2014/texmf-dist/fonts/type1/public/lm/lmsso10.pfb></usr/local/
-texlive/2014/texmf-dist/fonts/type1/public/lm/lmsso17.pfb></usr/local/texlive/2
-014/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2014/texmf-
-dist/fonts/type1/public/lm/lmsy7.pfb></usr/local/texlive/2014/texmf-dist/fonts/
-type1/public/marvosym/marvosym.pfb>
-Output written on cv_7.pdf (1 page, 204023 bytes).
+{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}</usr/local/texlive/2014/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/lm/lmss17.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/lm/lmsso10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/lm/lmsso17.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/lm/lmsy7.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/marvosym/marvosym.pfb>
+Output written on cv_7.pdf (1 page, 227567 bytes).
 PDF statistics:
- 105 PDF objects out of 1000 (max. 8388607)
- 88 compressed objects within 1 object stream
- 12 named destinations out of 1000 (max. 500000)
- 19030 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 77 PDF objects out of 1000 (max. 8388607)
+ 60 compressed objects within 1 object stream
+ 5 named destinations out of 1000 (max. 500000)
+ 21022 words of extra memory for PDF output out of 24883 (max. 10000000)
 
