@@ -159,17 +159,18 @@
 \makeatletter
   \begin{titlepage}
   \centering
-      {\includegraphics[height=0.09\textheight]{logo_phelma.png} \hfill \Large \textbf{Grenoble INP - Phelma}}\\
+      {%\includegraphics[height=0.09\textheight]{logo_phelma.png}
+    \hfill \Large \textbf{Grenoble INP - Phelma}}\\
     \hfill \large \textsc{Physique Électronique Matériaux}\\
     \hfill  3, Parvis Louis Néel \\
-	\hfill  38 000 Grenoble\\
+	   \hfill  38 000 Grenoble\\
 
 	\hspace{3em}
 
-    { \includegraphics[height=0.065\textheight]{logo_Rolls_Royce.jpg} \hfill \Large \textbf{Rolls-Royce}}\\
-    \hfill \large \textsc{Civil Nuclear SAS - Instrumentation \& Control }\\
-	\hfill 23, Chemin du Vieux Chêne   \\
-    \hfill 38 246 Meylan  \\
+  %   { \includegraphics[height=0.065\textheight]{logo_Rolls_Royce.jpg} \hfill \Large \textbf{Rolls-Royce}}\\
+  %   \hfill \large \textsc{Civil Nuclear SAS - Instrumentation \& Control }\\
+	% \hfill 23, Chemin du Vieux Chêne   \\
+  %   \hfill 38 246 Meylan  \\
 
 
    \vfill
@@ -187,9 +188,9 @@
    									\hfill   \textit{ismail.guedira@phelma.grenoble-inp.fr} \\
 	\vspace{2em}
 
-    \Large \textbf{Maitre de Stage :} 	\hfill	\Large \textsc{Hugo Petit} \\
-   										\hfill	\large \textbf{Analog Design Manager} \\
-   										\hfill	\textit{hugo.petit.cn@rolls-royce.com} \\
+    % \Large \textbf{Maitre de Stage :} 	\hfill	\Large \textsc{Hugo Petit} \\
+   % 										\hfill	\large \textbf{Analog Design Manager} \\
+   % 										\hfill	\textit{hugo.petit.cn@rolls-royce.com} \\
 
 
     \vfill
@@ -264,14 +265,13 @@ INTRODUCTION
  sig_B <= "00110011";		 
  sig_CMD <= "101";			-- case 7: question 6 (test avec erreur pour assert)		   
  wait for delay;
- assert sig_S = "01110101" report "Imagination" severity note; -- on test la fonction OR (pr�sence d'une erreur)
+ assert sig_S = "01110101" report "Imagination" severity note; -- on test la fonction OR (présence d'une erreur)
  assert false report "ERREUR = TRUE" severity note;
 \end{lstlisting}
 
 
 \chapter*{Conclusion}
 \addcontentsline{toc}{chapter}{Conclusion}
-.
 
 
 %%%%%%%%%%%%%%% Début de la gestion de l'annexe %%%%%%%%%%%%%%
