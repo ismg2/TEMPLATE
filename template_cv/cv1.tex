@@ -1,0 +1,72 @@
+% Exemple de CV utilisant la classe moderncv
+% Style classic en bleu
+% Article complet : http://blog.madrzejewski.com/creer-cv-elegant-latex-moderncv/
+
+\documentclass[11pt,a4paper]{moderncv}
+\moderncvtheme[blue]{classic}                
+\usepackage[utf8]{inputenc}
+\usepackage[top=1.1cm, bottom=1.1cm, left=2cm, right=2cm]{geometry}
+% Largeur de la colonne pour les dates
+\setlength{\hintscolumnwidth}{2.5cm}
+
+\firstname{Ismail}
+\familyname{Guedira}
+%\title{Étudiant en réseaux et télécommunications}              
+\address{Route de Cossonay 112}{1008 Prilly}    
+\email{ismail.guedira@phelma.grenoble-inp.fr}                      
+%\homepage{www.madrzejewski.com}
+\mobile{+33 6 22 45 51 93} 
+\photo[64pt][0.4pt]{photo}
+%\extrainfo{21 ans -- Permis B}
+\begin{document}
+\maketitle
+
+\section{Formations}
+\cventry{2015 -- 2016}{echange}{IUT Clermont-Ferrand (63)}{}{}{Spécialité Administration et Sécurité des Réseaux}
+\cventry{2013 -- 2015}{Phelma}{IUT Clermont-Ferrand}{}{}{Spécialité systèmes embarqués}
+\cventry{2011 -- 2013}{Prepa}{Saint-Flour (15)}{}{}{Série scientifique, spécialité mathématique}
+
+\section{Éxperience}
+\cventry{Septembre 2015\\à Aujourd'hui}{Projet de Semestre}{ESPLAB}{Laboratoire d'Électronique et Traitement du Signal}{Neuchâtel}{Création d'une entreprise de conseil en systèmes et logiciels informatiques. 
+Configuration de serveurs, infogérance et création de site web.\newline{}}
+
+\cventry{Mai 2015\\à Aout 2015}{Stage d'application}{Rolls-Royce Civil Nuclea}{Meylan}{France}{
+\begin{itemize}%
+\item Adaptation du code des applications de la société pour le rendre compatible Linux.\newline{}
+\end{itemize}}
+
+\cventry{Fevrier 2015\\à Avril 2015}{Conception CAN}{}{}{}{Installation, configuration et 
+maintenance d'un serveur dédié tournant sous Debian avec Apache pour héberger mes sites internet.\newline{}}
+
+\cventry{Aout 2014}{Stage Ouvrier}{ST Microelectronics}{Crolles}{}{Ce site propose des formations vidéos gratuites en informatique.
+Il reçoit 900 visiteurs uniques par jour (50 000 pages vues/mois)\newline{}}
+
+\cventry{Février 2014\\à Février 2015}{Vice-President de la Junior Conseil Phelma}{}{}{}{%
+Ce site propose des formations vidéos gratuites en informatique.
+Il reçoit 900 visiteurs uniques par jour (50 000 pages vues/mois)\newline{}}
+
+
+\section{Compétences}
+\cvitem{Langages}{(X)HTML, PHP, CSS, PL/SQL, C/C++, Java, Bash}
+\cvitem{Analyse}{Merise, UML, Design Patterns}
+\cvitem{Base de données}{MySQL, Oracle}
+\cvitem{CMS}{Wordpress, Symfony2 (des notions sur ce Framework)}
+\cvitem{Systèmes}{Windows XP/Seven/Server 2003/Server 2008, Linux (Debian)}
+\cvitem{Administration}{Apache2, BIND, Postfix, Fail2ban, Proxmox (openVZ), Iptables,Nagios}
+\cvitem{Réseaux}{Réseaux WAN, Protocole IP, VLAN, Téléphonie IP}
+\cvitem{Logiciels}{Microsoft office, Open Office, Adobe Photoshop}
+\cvlanguage{Anglais}{lu, écrit, parlé -- Toeic 965 / 990}{}
+
+%\cvcomputer{Langages}{(X)HTML, PHP, CSS, PL/SQL, C/C++, Java, Bash}{}{}
+%\cvcomputer{Base de données}{MySQL, Oracle}{CMS}{Wordpress, Symfony2 (notions)}
+%\cvcomputer{Analyse}{Merise, UML, Design Patterns}{}{}
+%\cvcomputer{Systèmes}{Windows XP/Seven/Server 2003/Server 2008, Linux (Debian)}{}{}
+%\cvcomputer{Administration}{Apache2, BIND, Postfix, Fail2ban, Proxmox (openVZ), Iptables,Nagios}{}{}
+
+\section{Centres d'intérêt}
+\cvitem{Cinéma}{Films et séries en version originale - Quentin Tarantino, Martin Scorsese, Guy Ritchie}
+\cvitem{Entreprenariat}{Passive Income, The 4 hour work week}
+%\cvitem{Plongée}{Diplôme de niveau 1}
+
+\end{document}
+
