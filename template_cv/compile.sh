@@ -1,0 +1,1 @@
+pdflatex cv1.tex && cp cv1.pdf CV_Ismail_Guedira.pdf
