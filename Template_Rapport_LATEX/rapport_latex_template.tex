@@ -265,7 +265,7 @@ INTRODUCTION
  sig_B <= "00110011";		 
  sig_CMD <= "101";			-- case 7: question 6 (test avec erreur pour assert)		   
  wait for delay;
- assert sig_S = "01110101" report "Imagination" severity note; -- on test la fonction OR (présence d'une erreur)
+ assert sig_S = "01110101" report "Imagination" severity note;
  assert false report "ERREUR = TRUE" severity note;
 \end{lstlisting}
 
