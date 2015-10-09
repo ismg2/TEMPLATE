@@ -10,3 +10,12 @@ template_cv/cv1_english.fls
 template_cv/cv1_english.log
 template_cv/cv1_english.out
 template_cv/cv1_english.synctex.gz
+
+template_cv/LM.aux
+template_cv/LM.fdb_latexmk
+template_cv/LM.fls
+template_cv/LM.log
+template_cv/LM.out
+template_cv/LM.pdf
+template_cv/LM.synctex.gz
+template_cv/LM.tex
