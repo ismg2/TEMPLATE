@@ -2,6 +2,8 @@ OUI='y'
 NON='n'
 fic="\ntemplate_cv/"
 
+################################### On crée un dossier pour l'entreprise et on gitignore
+
 printf "Salut Ismail, j'espère que cette entrerprise sera la bonne !!! \n"
 printf "\n Quel est le nom de cette entreprise stp ? \n " 
 read -r b
@@ -12,6 +14,9 @@ mkdir $b;
 cd ..
 echo $fic2 >> .gitignore
 cd template_cv/
+
+
+################################### On copie les CV en anglais et en francais on c jamais et on corrige/compile ####
 
 cp cv1.tex $b;
 cp cv1_english.tex $b;
@@ -37,10 +42,39 @@ if [ "$choix1" == $NON ];then
   fi
 else echo "\n la reponse est oui du coup je t'ouvre le fichier \n"
   open cv1.tex
+  echo "/n bon j'attend apres je compile hein !!!"
+  read -r compilation_cv
+  if [[ "$compilation_cv" == $OUI ]]; then
+    pdflatex -jobname=CV_Ismail_Guedira cv1.tex;
+    pdflatex -jobname=CV_Ismail_Guedira_en cv1_english.tex;
+  fi
 fi
+
+################## Gestion de la création d'une lettre de motivation dans notre dossier entreprise ################
+
+printf "\n\n\nMaintenant passons à la lettre de motivation \n\n\n"
+printf "\n %%%%% Candidature en francais ? ‰%%%%%% \n"
+read -r choix3
+if [ "$choix3" == $OUI];then
+  cp LM_fr.tex $b;
+  atom $b;
+  printf "\nje te laisse la corriger et la compiler hein\n"
+  printf "appuye sur (y) quand tu as finis que je la compiles dans le bon titre !! :D !!!"
+  read -r compilation_f
+  if [[ "$compilation_f" == $OUI ]]; then
+    pdflatex -jobname=LM_Ismail_Guedira LM_fr.tex
+  fi
+else
+  cp LM_en.tex $b;
+  atom $b; 
+  printf "\nje te laisse la corriger et j'attend\n"
+  printf "appuye sur (y) quand tu as finis que je la compiles dans le bon titre !! :D !!!"
+  read -r compilation_f
+  if [[ "$compilation_f" == $OUI ]]; then
+    pdflatex -jobname=CL_Ismail_Guedira LM_en.tex
+  fi
+fi
+
+
 exit 0;
 #
-  
-
-
-#pdflatex cv1.tex && cp cv1.pdf CV_Ismail_Guedira.pdf && pdflatex cv1.tex && cp cv1_english.pdf CV_Ismail_Guedira_en.pdf

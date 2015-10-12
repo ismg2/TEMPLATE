@@ -1,0 +1,63 @@
+% Exemple de CV utilisant la classe moderncv
+% Style classic en bleu
+% Article complet : http://blog.madrzejewski.com/creer-cv-elegant-latex-moderncv/
+
+\documentclass[11pt,a4paper]{moderncv}
+\usepackage[top=2cm, bottom=2cm, left=2cm, right=2cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
+%\usepackage[french]{babel}
+\moderncvtheme[blue]{casual}
+\moderncvstyle{casual}
+
+\usepackage{ragged2e}
+
+% Largeur de la colonne pour les dates
+%\setlength{\hintscolumnwidth}{2.5cm}
+
+\firstname{Ismail}
+\familyname{Guedira}
+%\title{Élève ingénieur en électronique analogique, hyperfréquence et numérique}              
+\address{Route de Cossonay 112}{1008 Prilly - Suisse}    
+\email{ismail.guedira@phelma.grenoble-inp.fr}                      
+%\homepage{www.madrzejewski.com}
+\mobile{+33 6 22 45 51 93} 
+\photo[64pt][0.4pt]{photo}
+%\quote{Stage blabla}
+%\extrainfo{21 ans -- Permis B}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%% CHANGER L'adresse !!!! %%%%%%%%%%%%%%
+
+\recipient{Alten}{40 Avenue André Morizet\\92100 Boulogne Billancourt,\\France} % Letter recipient
+\date{\today} % Letter date
+\opening{} % Opening greeting
+\closing{Cordialement,} % Closing phrase
+%\enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
+
+\makelettertitle % Print letter title
+\justify
+%%%%%%%%%%%%%%%%%%%% Changer le titre %%%%%%%%%%%%%%%%%%%
+\textbf{Objet : Ingénieur Modélisation de fonctions électroniques - Automobile}
+\newline{}
+
+Actuellement en 2ème année à Grenoble INP – Phelma, au sein de la filière Systèmes Électroniques Intégrés (SEI), je me suis spécialisé en microélectronique analogique suivant ainsi un enseignement technique à la pointe me permettant d'acquérir une large gamme de compétence en microélectronique avec en plus une vue globale du système facilitant l'interaction avec les différents acteurs de la réalisation d'un même système.\newline{}
+
+Lors d’un projet de microélectronique analogique j’ai eu l’occasion de réaliser un Convertisseur Analogique Numérique. Ce projet m’a permis d’exécuter les différentes étapes de conception d’un circuit analogique en partant de l’étude du système, étudiant le fonctionnement d’une solution de réalisation d’un convertisseur puis l’étude du circuit au niveau de la conception, caractérisation et layout des transistors pour finalement optimiser les différentes caractéristiques et obtenir un système répondant à un cahier des charges précis.\newline{}
+
+Je reste à votre entière disposition pour tout renseignement complémentaire et serai ravi de pouvoir vous exposer ma motivation et mes compétences lors d'un futur entretien.\newline{}
+
+Cordialement
+
+
+
+%\makeletterclosing % Print letter signature
+
+
+
+\end{document}
+

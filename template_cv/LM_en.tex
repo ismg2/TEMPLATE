@@ -1,0 +1,76 @@
+% Exemple de CV utilisant la classe moderncv
+% Style classic en bleu
+% Article complet : http://blog.madrzejewski.com/creer-cv-elegant-latex-moderncv/
+
+\documentclass[11pt,a4paper]{moderncv}
+\moderncvtheme[blue]{classic}
+\moderncvstyle{casual}
+\usepackage{ragged2e}
+      
+\usepackage[utf8]{inputenc}
+%\usepackage{babel}
+\usepackage[top=2cm, bottom=2cm, left=2cm, right=2cm]{geometry}
+% Largeur de la colonne pour les dates
+\setlength{\hintscolumnwidth}{2.5cm}
+
+\firstname{Ismail}
+\familyname{Guedira}
+\title{Élève ingénieur en électronique analogique, hyperfréquence et numérique}              
+\address{Route de Cossonay 112}{1008 Prilly - Suisse}    
+\email{ismail.guedira@phelma.grenoble-inp.fr}                      
+%\homepage{www.madrzejewski.com}
+\mobile{+33 6 22 45 51 93} 
+\photo[64pt][0.4pt]{photo}
+%\quote{Stage blabla}
+%\extrainfo{21 ans -- Permis B}
+
+% \usepackage{etoolbox}% http://ctan.org/pkg/etoolbox
+% \makeatletter
+% \patchcmd{\makeletterhead}% <cmd>
+%   {\raggedright \@opening}% <search>
+%   {\@opening}% <replace>
+%   {}{}% <success><failure>
+% \makeatother
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% CHANGER L'ADRESSE !!!!!!! %%%%%%
+
+\recipient{Freescale Semiconducteurs}{134 avenue du Général Eisenhower,\\ 31650 Toulouse,\\ France} % Letter recipient
+\date{\today} % Letter date
+\opening{} % Opening greeting
+\closing{Sincerely yours,} % Closing phrase
+%\enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
+
+\makelettertitle % Print letter title
+\justify
+
+%%%%%%%%%%%%%%%%%%%%%%% Le titre est a modifier aussi !!!! %%%%%%%
+\textbf{Engineering Internship : Design and develop electronic cards }
+\newline{}
+
+Dear Madam Kurgouale,\newline{}
+
+It is with great enthusiasm that I submit my application for the second internship offer that has sent us Miss Di Nola.
+After three years in two different engineering school such as Grenoble~INP~-~Phelma and EPFL (École Polytechnique Fédérale de Lausanne), I have developed different sides about electronic embedded system and specially around analog integrated circuit.
+
+As you will see from the attached resume, I’ve built my experience in a variety of roles and projects, most of my projects is related to analog design in integrated circuit such as my actual project with the ESPLAB (Electronic and Signal Processing Laboratory), which goal is to design from scratch a bandgap voltage reference in CMOS technology, using the last structure discovered these last years. This purely technical project is the opportunity to extend my technical skills outside engineering school frame, moreover I have the occasion to strengthen my autonomy, precision and rigorousness.
+
+Through different occasion, I also had the occasion to work in large groups. During my last internship, I had the chance to integrate Rolls-Royce Civil Nuclear division.
+With the electronic team, I worked on imporving methods to use a specifical tool such as Mathcad. 
+The purpose was to built a metodology that permit everyone to re-use design calculation of one card and adapt it to another card, having a uniform way of describing electronic function in Mathcad. 
+This work imply that this method was approuved and understood by everyone in the team, which induced a big communication work round everyone to understand all needs and obstacle. 
+
+Last, I want you to know my longtime interest on Freescale Semiconductor, the large area of your product application ( Automotive , Healthcare, IoT ...), in addition to the very wide range of Freescale's client that show the leadership of this company present in several countries from Brazil to the USA, in Europe and Asia. Freescale gather every assets that make it very attractive for futur engineers.   
+
+In closing, I would love the opportunity to meet with you and discuss the value that I can bring to Freescale Semiconductor. I appreciate your consideration and look forward to hearing from you.
+
+
+
+\makeletterclosing % Print letter signature
+
+
+
+\end{document}
+
