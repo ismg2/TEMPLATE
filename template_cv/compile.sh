@@ -75,6 +75,8 @@ else
   fi
 fi
 
+# clean up
+rm *.aux *.log *.bbl *.blg *.out;
 
 exit 0;
 #
