@@ -33,50 +33,53 @@ if [ "$choix1" == $NON ];then
   pdflatex -jobname=CV_Ismail_Guedira cv1.tex;  
   pdflatex -jobname=CV_Ismail_Guedira_en cv1_english.tex;
   pdflatex -jobname=CV_Ismail_Guedira_en cv1_english.tex;
+  rm *.aux *.log *.bbl *.blg *.out;
   echo "On les ouvre pour que tu verifies ?"
   read -r choix2
   if [ "$choix2" == $OUI ];then
     open CV_Ismail_Guedira.pdf;
     open CV_Ismail_Guedira_en.pdf;
-  else exit 0;
   fi
 else echo "\n la reponse est oui du coup je t'ouvre le fichier \n"
   open cv1.tex
   echo "/n bon j'attend apres je compile hein !!!"
   read -r compilation_cv
-  if [[ "$compilation_cv" == $OUI ]]; then
+  if [ "$compilation_cv" == $OUI ]; then
     pdflatex -jobname=CV_Ismail_Guedira cv1.tex;
     pdflatex -jobname=CV_Ismail_Guedira_en cv1_english.tex;
+    rm *.aux *.log *.bbl *.blg *.out;
   fi
 fi
 
 ################## Gestion de la création d'une lettre de motivation dans notre dossier entreprise ################
-
-printf "\n\n\nMaintenant passons à la lettre de motivation \n\n\n"
-printf "\n %%%%% Candidature en francais ? ‰%%%%%% \n"
+cd ..;
+printf "\n\n\n Maintenant passons a la lettre de motivation \n\n\n"
+printf "\n  Candidature en francais  \n"
 read -r choix3
 if [ "$choix3" == $OUI];then
   cp LM_fr.tex $b;
-  atom $b;
+  atom $b/LM_fr.tex;
   printf "\nje te laisse la corriger et la compiler hein\n"
   printf "appuye sur (y) quand tu as finis que je la compiles dans le bon titre !! :D !!!"
   read -r compilation_f
-  if [[ "$compilation_f" == $OUI ]]; then
+  if [ "$compilation_f" == $OUI ]; then
     pdflatex -jobname=LM_Ismail_Guedira LM_fr.tex
   fi
 else
   cp LM_en.tex $b;
-  atom $b; 
+  atom $b/LM_en.tex; 
   printf "\nje te laisse la corriger et j'attend\n"
   printf "appuye sur (y) quand tu as finis que je la compiles dans le bon titre !! :D !!!"
   read -r compilation_f
-  if [[ "$compilation_f" == $OUI ]]; then
+  if [ "$compilation_f" == $OUI ]; then
     pdflatex -jobname=CL_Ismail_Guedira LM_en.tex
   fi
 fi
 
 # clean up
+cd $b
 rm *.aux *.log *.bbl *.blg *.out;
+cd ..
 
 exit 0;
 #
