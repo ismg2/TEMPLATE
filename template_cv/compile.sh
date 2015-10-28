@@ -60,7 +60,7 @@ if [ "$choix3" == $OUI];then
   cp LM_fr.tex $b;
   atom $b/LM_fr.tex;
   printf "\nje te laisse la corriger et la compiler hein\n"
-  printf "appuye sur (y) quand tu as finis que je la compiles dans le bon titre !! :D !!!"
+  printf "\n appuye sur (y) quand tu as finis que je la compiles dans le bon titre !! :D !!! \n"
   read -r compilation_f
   if [ "$compilation_f" == $OUI ]; then
     pdflatex -jobname=LM_Ismail_Guedira LM_fr.tex
@@ -69,7 +69,7 @@ else
   cp LM_en.tex $b;
   atom $b/LM_en.tex; 
   printf "\nje te laisse la corriger et j'attend\n"
-  printf "appuye sur (y) quand tu as finis que je la compiles dans le bon titre !! :D !!!"
+  printf "\nappuye sur (y) quand tu as finis que je la compiles dans le bon titre !! :D !!!\n"
   read -r compilation_f
   if [ "$compilation_f" == $OUI ]; then
     pdflatex -jobname=CL_Ismail_Guedira LM_en.tex
