@@ -1,0 +1,65 @@
+% Exemple de CV utilisant la classe moderncv
+% Style classic en bleu
+% Article complet : http://blog.madrzejewski.com/creer-cv-elegant-latex-moderncv/
+
+\documentclass[11pt,a4paper]{moderncv}
+\usepackage[top=2cm, bottom=2cm, left=2cm, right=2cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
+
+\moderncvtheme[blue]{casual}
+\moderncvstyle{casual}
+
+\usepackage{ragged2e}
+
+% Largeur de la colonne pour les dates
+%\setlength{\hintscolumnwidth}{2.5cm}
+
+\firstname{Ismail}
+\familyname{Guedira}
+%\title{Élève ingénieur en électronique analogique, hyperfréquence et numérique}              
+\address{Route de Cossonay 112}{1008 Prilly - Suisse}    
+\email{ismail.guedira@phelma.grenoble-inp.fr}                      
+%\homepage{www.madrzejewski.com}
+\mobile{+33 6 22 45 51 93} 
+\photo[64pt][0.4pt]{photo}
+%\quote{Stage blabla}
+%\extrainfo{21 ans -- Permis B}
+\newcommand{\entreprise}{\textbf{ENTREPRISE}}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%% CHANGER L'adresse !!!! %%%%%%%%%%%%%%
+
+\recipient{\entreprise}{Rue et numero\\CP Ville,\\Pays} % Letter recipient
+\date{\today} % Letter date
+\opening{} % Opening greeting
+\closing{Cordialement,} % Closing phrase
+%\enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
+
+\makelettertitle % Print letter title
+\justify % Justifie le txt
+%%%%%%%%%%%%%%%%%%%% Changer le titre %%%%%%%%%%%%%%%%%%%
+\textbf{Objet : Titre}
+\newline{}
+
+Madame, Monsieur,\newline{}
+
+\hspace{0.8cm} Suite à ma rencontre, lors de la Journée des Partenaires à Phelma le 15 octobre, avec certains membres de  \entreprise, je fus très intéressé par la diversité des secteurs d'activité et les propositions de travail autour des sujets concernant le design en RF et en analogique. La diversité des clients ainsi que la présence de Freescale dans l'ensemble de la planète montrent son leadership dans l'industrie de l'électronique. \entreprise~rassemble donc l'ensemble des atouts qui font d'elle une entreprise très attrayante pour moi. Aujourd'hui à la recherche d'un stage de fin d'études, d'une durée de 6 mois, pouvant commencer à partir du mois de Fevrier, le sujet proposé sur votre site a tout de suite attiré mon attention.\newline{}
+
+\hspace{0.8cm} Actuellement en $3^{ème}$ année en échange pendant un semestre à l'\textbf{EPFL} ( École Polytechnique Fédérale de Lausanne ) au sein de la section Génie Électrique et Électronique, je poursuis ma formation initiale au sein de \textbf{Grenoble INP - Phelma} en Systèmes Électroniques Intégrés (SEI) dans laquelle je me suis spécialisé en microélectronique analogique et radio-fréquence. Durant mes deux années à Phelma, j'ai pu suivre un enseignement technique à la pointe me permettant d'acquérir une large gamme de compétence en microélectronique avec en plus une vue globale du système facilitant l'interaction avec les différents acteurs de la réalisation d'un même projet. 
+Lors de ce semestre d'échange à Lausanne, j'ai eu l'occasion de m'intéresser particulièrement au système à très hautes fréquences ainsi que les systèmes à très basse consommation en utilisant le modèle \textit{EKV} qui permet de modéliser le comportement des transistors à de très faible tension d'alimentation.
+
+\hspace{0.8cm} Lors d'un projet en électronique analogique au sein de l'\textbf{ESPLAB} (Laboratoire d'électronique et de Traintement du Signal) à Neuchâtel, j'ai eu l'occasion de réaliser une référence de tension à très faible variation en température et quasiment indépendante de la tension d'alimentation. Dans un cadre où j'ai pu être très autonome tout en ayant l'appui des chercheurs au sein du laboratoire, j'ai l'opportunité, tout au long de ce semestre, de choisir l'architecture qui convenait le mieux aux applications automobiles de cette puce, réaliser l'ensemble de l'étude et le dimensionnement des différents étages de cette référence de tension dite Bandgap.\newline{}
+
+
+Je reste à votre entière disposotion pour tout renseignement complémentaire et serai ravi de pouvoir vous exposer ma motivation et mes compétences lors d'un futur entretien.\newline{}
+
+\makeletterclosing % Print letter signature
+
+
+
+\end{document}
+
