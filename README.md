@@ -17,6 +17,9 @@ Ne contient pas le template pour faire un gantt
 Template importé et LM modifié pour que ca soit joli !...
 Contient un petit code shell pour organiser les CV et LM dans des dossier bien fait et tout !
 
+Le dossier TEX : contient tout les .tex
+Le dossier PDF : Les CV généraliste et les LM sans le nom des entreprises et puis généralistes quoi !
+
 ## Compiler du LATEX
 
 Ce petit bout de code permet de compiler du latex et de faire le menage avant de partir pour eviter de prendre trop de place !
