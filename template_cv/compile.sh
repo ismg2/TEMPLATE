@@ -51,26 +51,28 @@ else echo "\n la reponse est oui du coup je t'ouvre le fichier \n"
 fi
 
 ################## Gestion de la création d'une lettre de motivation dans notre dossier entreprise ################
-
+cd ..
 printf "\n\n\n Maintenant passons a la lettre de motivation \n\n\n"
 printf "\n  Candidature en francais  \n"
 read -r choix3
 if [ "$choix3" == $OUI ]; then # Version Francaise
-  cp ../TEX/LM_fr.tex $b;
-  atom LM_fr.tex;
+  cp TEX/LM_fr.tex $b;
+  atom $b;
   printf "\nje te laisse la corriger et la compiler hein\n"
   printf "\n appuye sur (y) quand tu as finis que je la compiles dans le bon titre !! :D !!! \n"
   read -r compilation_f
   if [ "$compilation_f" == $OUI ]; then # Version Francaise
+    cd $b
     pdflatex -jobname=LM_Ismail_Guedira LM_fr.tex
   fi
 else # Version Anglais
-  cp ../TEX/LM_en.tex $b; 
-  atom LM_en.tex; 
+  cp TEX/LM_en.tex $b; 
+  atom $b; 
   printf "\nje te laisse la corriger et j'attend\n"
   printf "\nappuye sur (y) quand tu as finis que je la compiles dans le bon titre !! :D !!!\n"
   read -r compilation_f # Version Anglais
   if [ "$compilation_f" == $OUI ]; then
+    cd $b
     pdflatex -jobname=CL_Ismail_Guedira LM_en.tex
   fi
 fi
